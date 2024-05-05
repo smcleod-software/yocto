@@ -1,4 +1,4 @@
-The bbappend file in this folder fixes the following QA error when building with bitbake:
+The bbappend file in this folder fixes the following QA error when building with bitbake Yocto Kirkstone kernel 5.15.71:
 
 ERROR: QA Issue: /usr/lib/python3.10/site-packages/bin/deepview-modelclient contained in package deepview-rt 
 requires /workdir/build_xwayland/tmp/work/armv8a-fslc-linux/deepview-rt/2.4.46-aarch64-r0/recipe-sysroot-native/usr/bin/nativepython3, 
