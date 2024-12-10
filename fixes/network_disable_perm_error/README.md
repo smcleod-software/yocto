@@ -6,16 +6,22 @@ This solution is specific to Ubuntu 24.0.4.
 
 Create the following file:
 
+```
 sudo vi /etc/apparmor.d/bitbake
+```
 
 Add the following to the file:
 
+```
 abi <abi/4.0>,
 include <tunables/global>
 profile bitbake /**/bitbake flags=(unconfirmed) {
 userns,
 }
+```
 
 Then run:
 
+```
 sudo apparmor_parser -r /etc/apparmor.d/bitbake
+```
